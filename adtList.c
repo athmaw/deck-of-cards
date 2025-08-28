@@ -26,13 +26,16 @@ int main() {
     L.elem[2] = 2;
     L.elem[3] = 5;
     L.count = 4;
+	printf("ORIGINAL ELEMENTS = ");
     display(L);
     
     L = insertPos(L, 4, 2);
-    display(L);
+    printf("AFTER INSERTING POSITION = ");
+	display(L);
     
     L = deletePos(L, 4);
-    display(L);
+    printf("AFTER DELETING = ");
+	display(L);
     
 //    int Ndx = locate(L, 4);
 //    
@@ -43,7 +46,8 @@ int main() {
 //	}
     
     L = insertSorted(L, 6);
-    display(L);
+    printf("AFTER SORTED INSERT = ");
+	display(L);
     
     return 0;
 }
@@ -118,7 +122,6 @@ List insertSorted(List L, int data) {
 void display(List L) {
 	int i;
 	
-	printf("elem: ");
     for(i = 0; i < L.count; i++) {
         printf("%d ", L.elem[i]);
     }
