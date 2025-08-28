@@ -6,7 +6,6 @@ public class Main {
         Deck deck = new Deck();
         int choice;
 
-
         do {
             System.out.println("\n--- Menu ---");
             System.out.println("1. Create Deck");
@@ -50,7 +49,6 @@ public class Main {
                     System.out.println("Invalid choice! Please try again.");
             }
         } while (choice != 5);
-
 
         sc.close();
     }
